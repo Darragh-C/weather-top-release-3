@@ -2,8 +2,6 @@ package models;
 
 import play.db.jpa.Model;
 import java.util.HashMap;
-
-
 import java.sql.Timestamp;
 import java.time.Instant;
 
@@ -26,7 +24,6 @@ public class Reading extends Model
     public double minWindSpeed;
 
     public Timestamp timestamp = Timestamp.from(Instant.now());
-
     
    public Reading(int code, double temperature, double windSpeed, long pressure, int windDirection, String date)
     {
